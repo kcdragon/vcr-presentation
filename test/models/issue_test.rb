@@ -24,4 +24,13 @@ class IssueTest < ActiveSupport::TestCase
       assert_equal title, issue.title
     end
   end
+
+  def test_list_issues_closed_today
+    issues = VCR.use_cassette('issue/most_recent_closed_issue') do
+      Issue.most_recent_closed_issue
+    end
+
+    issue = issues.first
+    assert_equal 'Test Issue #1', issue.title
+  end
 end

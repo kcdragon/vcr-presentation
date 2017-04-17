@@ -27,4 +27,15 @@ class Issue
     end
     JSON.parse(response.body)
   end
+
+  def self.most_recent_closed_issue
+    uri = URI.parse("#{REPOSITORY}/issues?state=closed&sort=updated")
+    response = Net::HTTP.get_response(uri)
+
+    JSON.parse(response.body).map do |issue_data|
+      Issue.new(
+        title: issue_data['title']
+      )
+    end
+  end
 end

@@ -1,0 +1,75 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.github.com/repos/kcdragon/vcr-presentation/issues?sort=updated&state=closed
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.github.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Mon, 17 Apr 2017 20:50:05 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '58'
+      X-Ratelimit-Reset:
+      - '1492465692'
+      Cache-Control:
+      - public, max-age=60, s-maxage=60
+      Vary:
+      - Accept
+      - Accept-Encoding
+      Etag:
+      - W/"4b1b6f63ff1275e0841508d07aaa25bb"
+      X-Github-Media-Type:
+      - github.v3; format=json
+      Access-Control-Expose-Headers:
+      - ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset,
+        X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Served-By:
+      - 77fbfb53269bbb85f82f23584d59f7c1
+      X-Github-Request-Id:
+      - C4CF:1E003:34C4443:44970DC:58F52A7D
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"url":"https://api.github.com/repos/kcdragon/vcr-presentation/issues/1","repository_url":"https://api.github.com/repos/kcdragon/vcr-presentation","labels_url":"https://api.github.com/repos/kcdragon/vcr-presentation/issues/1/labels{/name}","comments_url":"https://api.github.com/repos/kcdragon/vcr-presentation/issues/1/comments","events_url":"https://api.github.com/repos/kcdragon/vcr-presentation/issues/1/events","html_url":"https://github.com/kcdragon/vcr-presentation/issues/1","id":221957187,"number":1,"title":"Test
+        Issue #1","user":{"login":"kcdragon","id":982306,"avatar_url":"https://avatars2.githubusercontent.com/u/982306?v=3","gravatar_id":"","url":"https://api.github.com/users/kcdragon","html_url":"https://github.com/kcdragon","followers_url":"https://api.github.com/users/kcdragon/followers","following_url":"https://api.github.com/users/kcdragon/following{/other_user}","gists_url":"https://api.github.com/users/kcdragon/gists{/gist_id}","starred_url":"https://api.github.com/users/kcdragon/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/kcdragon/subscriptions","organizations_url":"https://api.github.com/users/kcdragon/orgs","repos_url":"https://api.github.com/users/kcdragon/repos","events_url":"https://api.github.com/users/kcdragon/events{/privacy}","received_events_url":"https://api.github.com/users/kcdragon/received_events","type":"User","site_admin":false},"labels":[],"state":"closed","locked":false,"assignee":null,"assignees":[],"milestone":null,"comments":0,"created_at":"2017-04-15T16:12:24Z","updated_at":"2017-04-17T20:49:46Z","closed_at":"2017-04-17T20:49:46Z","body":""},{"url":"https://api.github.com/repos/kcdragon/vcr-presentation/issues/2","repository_url":"https://api.github.com/repos/kcdragon/vcr-presentation","labels_url":"https://api.github.com/repos/kcdragon/vcr-presentation/issues/2/labels{/name}","comments_url":"https://api.github.com/repos/kcdragon/vcr-presentation/issues/2/comments","events_url":"https://api.github.com/repos/kcdragon/vcr-presentation/issues/2/events","html_url":"https://github.com/kcdragon/vcr-presentation/issues/2","id":221969526,"number":2,"title":"Test
+        Issue #2","user":{"login":"kcdragon","id":982306,"avatar_url":"https://avatars2.githubusercontent.com/u/982306?v=3","gravatar_id":"","url":"https://api.github.com/users/kcdragon","html_url":"https://github.com/kcdragon","followers_url":"https://api.github.com/users/kcdragon/followers","following_url":"https://api.github.com/users/kcdragon/following{/other_user}","gists_url":"https://api.github.com/users/kcdragon/gists{/gist_id}","starred_url":"https://api.github.com/users/kcdragon/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/kcdragon/subscriptions","organizations_url":"https://api.github.com/users/kcdragon/orgs","repos_url":"https://api.github.com/users/kcdragon/repos","events_url":"https://api.github.com/users/kcdragon/events{/privacy}","received_events_url":"https://api.github.com/users/kcdragon/received_events","type":"User","site_admin":false},"labels":[],"state":"closed","locked":false,"assignee":null,"assignees":[],"milestone":null,"comments":0,"created_at":"2017-04-15T20:02:47Z","updated_at":"2017-04-17T20:42:36Z","closed_at":"2017-04-17T20:42:36Z","body":""},{"url":"https://api.github.com/repos/kcdragon/vcr-presentation/issues/3","repository_url":"https://api.github.com/repos/kcdragon/vcr-presentation","labels_url":"https://api.github.com/repos/kcdragon/vcr-presentation/issues/3/labels{/name}","comments_url":"https://api.github.com/repos/kcdragon/vcr-presentation/issues/3/comments","events_url":"https://api.github.com/repos/kcdragon/vcr-presentation/issues/3/events","html_url":"https://github.com/kcdragon/vcr-presentation/issues/3","id":222066575,"number":3,"title":"Issue
+        created from API #1","user":{"login":"kcdragon","id":982306,"avatar_url":"https://avatars2.githubusercontent.com/u/982306?v=3","gravatar_id":"","url":"https://api.github.com/users/kcdragon","html_url":"https://github.com/kcdragon","followers_url":"https://api.github.com/users/kcdragon/followers","following_url":"https://api.github.com/users/kcdragon/following{/other_user}","gists_url":"https://api.github.com/users/kcdragon/gists{/gist_id}","starred_url":"https://api.github.com/users/kcdragon/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/kcdragon/subscriptions","organizations_url":"https://api.github.com/users/kcdragon/orgs","repos_url":"https://api.github.com/users/kcdragon/repos","events_url":"https://api.github.com/users/kcdragon/events{/privacy}","received_events_url":"https://api.github.com/users/kcdragon/received_events","type":"User","site_admin":false},"labels":[],"state":"closed","locked":false,"assignee":null,"assignees":[],"milestone":null,"comments":0,"created_at":"2017-04-17T05:07:10Z","updated_at":"2017-04-17T20:38:39Z","closed_at":"2017-04-17T20:38:39Z","body":null}]'
+    http_version: 
+  recorded_at: Mon, 17 Apr 2017 20:50:05 GMT
+recorded_with: VCR 3.0.3
