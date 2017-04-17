@@ -40,7 +40,7 @@ class Issue
   end
 
   def self.important_bugs
-    uri = URI.parse("#{REPOSITORY}/issues?labels=bug,important")
+    uri = URI.parse("#{REPOSITORY}/issues?labels=important,bug")
     response = Net::HTTP.get_response(uri)
 
     JSON.parse(response.body).map do |issue_data|

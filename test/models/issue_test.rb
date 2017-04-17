@@ -35,7 +35,7 @@ class IssueTest < ActiveSupport::TestCase
   end
 
   def test_important_bug_issues
-    issues = VCR.use_cassette('issue/important_bugs') do
+    issues = VCR.use_cassette('issue/important_bugs', match_requests_on: %i(path label_in_query_string)) do
       Issue.important_bugs
     end
 
