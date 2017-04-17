@@ -1,0 +1,73 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.github.com/repos/kcdragon/vcr-presentation/issues?labels=bug,important
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.github.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Mon, 17 Apr 2017 21:05:33 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '56'
+      X-Ratelimit-Reset:
+      - '1492465692'
+      Cache-Control:
+      - public, max-age=60, s-maxage=60
+      Vary:
+      - Accept
+      - Accept-Encoding
+      Etag:
+      - W/"1705c8c258b1963b6074199bc16082c6"
+      X-Github-Media-Type:
+      - github.v3; format=json
+      Access-Control-Expose-Headers:
+      - ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset,
+        X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Served-By:
+      - 77fbfb53269bbb85f82f23584d59f7c1
+      X-Github-Request-Id:
+      - C502:1E003:34EF990:44CF8F0:58F52E1D
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"url":"https://api.github.com/repos/kcdragon/vcr-presentation/issues/4","repository_url":"https://api.github.com/repos/kcdragon/vcr-presentation","labels_url":"https://api.github.com/repos/kcdragon/vcr-presentation/issues/4/labels{/name}","comments_url":"https://api.github.com/repos/kcdragon/vcr-presentation/issues/4/comments","events_url":"https://api.github.com/repos/kcdragon/vcr-presentation/issues/4/events","html_url":"https://github.com/kcdragon/vcr-presentation/issues/4","id":222230720,"number":4,"title":"Important
+        Bug","user":{"login":"kcdragon","id":982306,"avatar_url":"https://avatars2.githubusercontent.com/u/982306?v=3","gravatar_id":"","url":"https://api.github.com/users/kcdragon","html_url":"https://github.com/kcdragon","followers_url":"https://api.github.com/users/kcdragon/followers","following_url":"https://api.github.com/users/kcdragon/following{/other_user}","gists_url":"https://api.github.com/users/kcdragon/gists{/gist_id}","starred_url":"https://api.github.com/users/kcdragon/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/kcdragon/subscriptions","organizations_url":"https://api.github.com/users/kcdragon/orgs","repos_url":"https://api.github.com/users/kcdragon/repos","events_url":"https://api.github.com/users/kcdragon/events{/privacy}","received_events_url":"https://api.github.com/users/kcdragon/received_events","type":"User","site_admin":false},"labels":[{"id":584492234,"url":"https://api.github.com/repos/kcdragon/vcr-presentation/labels/bug","name":"bug","color":"ee0701","default":true},{"id":585841868,"url":"https://api.github.com/repos/kcdragon/vcr-presentation/labels/important","name":"important","color":"bfdadc","default":false}],"state":"open","locked":false,"assignee":null,"assignees":[],"milestone":null,"comments":0,"created_at":"2017-04-17T21:01:53Z","updated_at":"2017-04-17T21:01:59Z","closed_at":null,"body":""}]'
+    http_version: 
+  recorded_at: Mon, 17 Apr 2017 21:05:34 GMT
+recorded_with: VCR 3.0.3

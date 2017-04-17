@@ -33,4 +33,12 @@ class IssueTest < ActiveSupport::TestCase
     issue = issues.first
     assert_equal 'Test Issue #1', issue.title
   end
+
+  def test_important_bug_issues
+    issues = VCR.use_cassette('issue/important_bugs') do
+      Issue.important_bugs
+    end
+
+    assert_equal 1, issues.count
+  end
 end
