@@ -15,4 +15,16 @@ class Issue
       )
     end
   end
+
+  def self.create(issue)
+    uri = URI.parse("#{REPOSITORY}/issues")
+    request = Net::HTTP::Post.new(uri)
+    request.body = JSON.generate(title: issue.title)
+    request.basic_auth("user", "token")
+
+    response = Net::HTTP.start(uri.hostname, uri.port, use_ssl: true) do |http|
+      http.request(request)
+    end
+    JSON.parse(response.body)
+  end
 end
