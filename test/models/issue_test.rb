@@ -16,7 +16,7 @@ class IssueTest < ActiveSupport::TestCase
   def test_create_issue
     title = 'Issue created from API #1'
     issue = Issue.new(title: title)
-    VCR.use_cassette('issue/create') do
+    VCR.use_cassette('issue/create', match_requests_on: %i(uri method body)) do
       Issue.create(issue)
 
       issues = Issue.all
